@@ -10,13 +10,15 @@ import Friends from "./ex/Friends";
 const App = () => {
   return (
     <>
-      {/* <h1>리액트 231122</h1> */}
-      {/* <UseEffect3 /> */}
-      {/* <UseEffect4 /> */}
-      {/* <UseEffect5 /> */}
-      {/* <Ex1useEffect /> */}
-      {/* <Ex2useEffect /> */}
-      <Friends />
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        {/* <h1>리액트 231122</h1> */}
+        {/* <UseEffect3 /> */}
+        {/* <UseEffect4 /> */}
+        {/* <UseEffect5 /> */}
+        {/* <Ex1useEffect /> */}
+        {/* <Ex2useEffect /> */}
+        <Friends />
+      </BrowserRouter>
     </>
   );
 };
