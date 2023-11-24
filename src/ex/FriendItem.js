@@ -31,11 +31,11 @@ const Btn = styled.button`
 
 const FriendItem = ({ item, onDel }) => {
   const { id, name, age, image } = item;
-
+  const path = process.env.PUBLIC_URL;
   return (
     <List key={id}>
       <p>
-        <Img src={image} alt={name} />
+        <Img src={path + image} alt={name} />
       </p>
       <TextInfo>
         <p>
